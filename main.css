@@ -1,0 +1,765 @@
+/*+++++ Main CSS ++++++*/
+
+body{
+    margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.red-speech{
+  font-family: 'Roboto', sans-serif;
+  color:#BE1E2D;
+  font-weight: 500;
+  line-height: 1em;
+  font-style: inherit;
+}
+
+.badwolf-speech{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+  font-style: inherit;
+}
+
+.huntsman-speech{
+  font-family: 'Roboto', sans-serif;
+  color:#748284;
+  font-weight: 500;
+  line-height: 1em;
+  font-style: inherit;
+}
+
+h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  
+}
+
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#BE1E2D;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+h4{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+/* Landing Page */
+
+.landpage{
+  padding:0;
+  margin:0;
+  margin-top:-40px;
+}
+
+  #red{
+    animation: shake 8s infinite;
+    animation-duration: 20s;
+    animation-delay: 1s;
+  }
+
+
+  #paw1 {
+    animation: fadeOut 1s infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
+
+
+  }
+  #paw2 {
+    animation: fadeOut 2s infinite;
+    animation-duration: 5s;
+    animation-delay: 2s;
+
+
+  }
+  #paw3 {
+    animation: fadeOut 3s infinite;
+    animation-duration: 5s;
+    animation-delay: 3s;
+   
+  }
+  #paw4 {
+    animation: fadeOut 4s infinite;
+    animation-duration: 5s;
+    animation-delay: 4s;
+
+  }
+  #paw5 {
+    animation: fadeOut 5s infinite;
+    animation-duration: 5s;
+    animation-delay: 5s;
+
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 0;
+    }
+  to{
+      opacity: 1;
+    }
+  }
+
+ #title1, #title2 {
+    animation: fadeIn 5s infinite alternate;
+  }
+
+  @keyframes fadeIn { 
+    from { opacity: 0; } 
+  }
+
+
+
+  .arrow1{
+    width:120px;
+    height:200px;
+  animation: MoveUpDown 1s linear infinite;
+  position:relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  background: url(arrow.svg) no-repeat;
+      background-size: 300px;
+      background-position: -43px center;
+      margin-top:-200px;
+  }
+
+  .arrow{
+    width:120px;
+    height:200px;
+  animation: MoveUpDown 1s linear infinite;
+  position:relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  background: url(arrow.svg) no-repeat;
+      background-size: 300px;
+      background-position: -43px center;
+      margin-top:00px;
+  }
+  
+  
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50%{
+      bottom:50px;
+    }
+  }
+  
+
+/* Warning Section */
+
+#warning{
+  background-color:black; 
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top:-10px;
+  padding-top:50px;
+ padding-bottom:450px;
+  /* background-color:red; */
+}
+
+.w-title{
+  color:#BE1E2D;
+  font-size: 5em;
+  letter-spacing: .2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;  
+  animation: fadeIn 1s infinite alternate;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+.w-text{
+  color:white;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  line-height: 2em;
+}
+
+
+
+/* Welcome Section */
+
+#intro{
+  height: 600px;
+  margin: auto;
+  /* background-color:blue; */
+}
+
+.welcome{
+  position:relative;
+  top:65%;
+  text-align:center;
+  vertical-align:middle;
+  margin: 0 auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400; 
+  letter-spacing: .2em;
+  /* background-color:gray; */
+}
+
+.introtitle{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600; 
+  letter-spacing: .2em;
+  font-size:1.8em;
+}
+#ded{
+  position:relative;
+  top:65%;
+  text-align:center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300; 
+  letter-spacing: .1em;
+  font-size:1.5em;
+}
+
+
+
+
+/* Once Upon a Time Section */
+
+#once{
+  width: 60%;
+  height: 1400px;
+  margin: 60% auto;
+ padding-top:200px;
+  /* background-color:red; */
+}
+
+#oncetitle{
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600; 
+  font-size: 5em;
+}
+
+.story{
+  font-family: roboto;
+  font-weight: 300;
+  font-size:1.2em;
+  line-height: 1.5em;
+  }
+
+
+  /* Bang Section */
+
+#bangsection{
+  width: 100vw;
+  height: 1600px;
+  margin: 0 auto;
+  background-color:black;
+  padding-top:10%;
+}
+
+.bangstory{
+  width:50%;
+  margin: 0 auto;
+  font-family: roboto;
+  font-weight: 300;
+  line-height: 1.2em;
+  color:white;
+  margin-top:90%;
+  font-size: 1.8em;
+  }
+
+.bang{
+  width:100%!important;
+  height:100%!important;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-bottom:200px;
+  background:url(bang.svg) no-repeat center;
+  -webkit-animation: flash linear .5s infinite;
+  animation: flash linear .5s infinite;
+  background-size: cover;
+  }
+
+@-webkit-keyframes flash {
+  0% {opacity:1;}
+  50%{opacity:1;}
+  100%{opacity:1;}
+  }
+
+  @keyframes flash {
+    0% {opacity:1;}
+    50%{opacity:1;}
+    100%{opacity:1;}
+    } 
+  
+
+/* Choice 1 */
+
+#choice1{
+  width: 100%;
+  height: 1600px;
+  margin: 0 auto;
+  background-color:black;
+  padding-top:40%;
+}
+.choice1{
+  width:auto;
+  height:300px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top:200px;
+  margin-bottom:200px;
+  padding-bottom:200px;
+  background:url(choice1.svg) no-repeat center;
+
+  }
+
+  .gunshot{
+    width:400px;
+    position:absolute;
+    left: 25%;
+    right: 55%;
+    margin: auto;
+    margin-top:35%;
+    padding-bottom:200px;
+    background:url(gunshot-option.svg) no-repeat center;
+    animation: halfFade 1s infinite alternate;
+  }
+
+    
+    .otherpath{
+      width:300px;
+      position:absolute;
+      left: 55%;
+      right: 25%;
+      margin: auto;
+      margin-top:35%;
+      padding-bottom:200px;
+      background:url(otherpath-01.svg) no-repeat center;
+      animation: halfFade 1s infinite alternate 3s;
+  
+    }
+    
+  @keyframes halfFade { 
+      from { opacity: .5; } 
+      to { opacity: 1; } 
+      } 
+
+
+
+/* Gunshot Choice */
+
+#gunshotChoice{
+  width: 100%;
+  height: 1600px;
+  margin: 0 auto;
+  padding-top:40%;
+}
+.gunshotChoice{
+  width:auto;
+  height:400px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top:100px;
+  margin-bottom:200px;
+  padding-bottom:200px;
+  background:url(chosenGunshot.svg) no-repeat center;
+
+}
+
+.continuearrow{
+  width:100px;
+  height:auto;
+  position:relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top:500px;
+  margin-bottom:200px;
+  padding-bottom:200px;
+  background:url(continuearrow.svg) no-repeat center;
+  animation: continue 1s linear infinite;
+}
+
+@keyframes continue {
+  0%, 100% {
+    bottom: 0;
+  }
+  50%{
+    bottom:20px;
+  }
+}
+
+/* Gunshot STORY */
+
+#gunshotStory{
+    width: 100%;
+    height: 1600px;
+    margin: 0 auto;
+    padding-top:40%;
+  }
+  .gstory{
+    width:50%;
+    margin: 0 auto;
+    font-family: roboto;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin-top:10%;
+    font-size: 1.2em; 
+    }
+
+
+
+
+
+
+
+
+    /* Choice 2 */
+
+#choice2{
+  width: 100%;
+  height: 1600px;
+  margin: 0 auto;
+  background-color:black;
+  padding-top:40%;
+}
+.choice2{
+  width:auto;
+  height:300px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top:200px;
+  margin-bottom:200px;
+  padding-bottom:200px;
+  background:url(choice2.svg) no-repeat center;
+
+  }
+
+  .huntsman{
+    width:400px;
+    position:absolute;
+    left: 25%;
+    right: 55%;
+    margin: auto;
+    margin-top:35%;
+    padding-bottom:200px;
+    background:url(huntsman-option.svg) no-repeat center;
+    animation: halfFade 1s infinite alternate;
+  }
+
+    
+    .leave-huntsman{
+      width:300px;
+      position:absolute;
+      left: 55%;
+      right: 25%;
+      margin: auto;
+      margin-top:35%;
+      padding-bottom:200px;
+      background:url(leavehuntsman-option.svg) no-repeat center;
+      animation: halfFade 1s infinite alternate 3s;
+  
+    }
+    
+  @keyframes halfFade { 
+      from { opacity: .5; } 
+      to { opacity: 1; } 
+      } 
+
+
+
+/* Huntsman Choice */
+
+#huntsmanChoice{
+  width: 100%;
+  height: 1600px;
+  margin: 0 auto;
+  padding-top:40%;
+}
+.huntsmanChoice{
+  width:auto;
+  height:400px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top:100px;
+  margin-bottom:200px;
+  padding-bottom:200px;
+  background:url(chosenHuntsman.svg) no-repeat center;
+
+}
+
+.continuearrow{
+  width:100px;
+  height:auto;
+  position:relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top:500px;
+  margin-bottom:200px;
+  padding-bottom:200px;
+  background:url(continuearrow.svg) no-repeat center;
+  animation: continue 1s linear infinite;
+}
+
+@keyframes continue {
+  0%, 100% {
+    bottom: 0;
+  }
+  50%{
+    bottom:20px;
+  }
+}
+
+/* HUNTSMAN STORY */
+
+#huntsmanStory{
+  width: 100%;
+  height: auto;
+  margin: 60% auto;
+  padding-top:40%;
+}
+.hstory{
+  width:50%;
+  margin: 0 auto;
+  font-family: roboto;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin-top:10%;
+  font-size: 1.2em; 
+  }
+
+
+
+
+  .button{
+    width: 30%;
+    margin:0 auto;
+  }
+
+
+  button{
+  background-color:#BE1E2D;
+    color:white;
+    width:200px;
+    height:30px;
+    border-radius: 15px;
+align-content: center;
+margin-top:40px;
+margin-bottom:0px;
+  }
+
+  #shoot-skill {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    background:url(shoot-skill.svg) no-repeat center;
+      background-size: 400px;
+      
+  }
+
+  #revolver {
+    width: 100%;
+    height:150px;
+    padding: 50px 0;
+    margin:50px 0;
+    text-align: center;
+    background-color: lightblue;
+    background:url(revolver.svg) no-repeat center; 
+    background-size: 300px;     
+  }
+
+
+/* .options {
+  width: 100%;
+  height: 600px;
+  margin: 40% auto;
+  padding-top:300px;
+  background-color:gray;
+}
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* .options {
+  overflow: hidden;
+  position: relative;
+}
+
+.options input {
+  display: none;
+}
+
+.options label {
+  background: #fff;
+  padding: 4px 8px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+.options .labelhold {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.outerchoice {
+  width: 100%;
+  
+}
+
+.choice {
+    width: 100%;
+  height: 100%;
+  background:#ff0000;
+  position: absolute; 
+  top: 0;
+  transition: .5s;
+}
+
+.choice1 {
+  left: -100%;
+  z-index: 2;
+}
+
+.choicepage {
+  background:#eee;
+}
+
+.choice2 {
+  right: -100%;
+}
+
+#firstchoice input:nth-child(1):checked ~ .outerchoice .choice1 {
+  left: 0!important;
+}
+
+#firstchoice input:nth-child(2):checked ~ .outerchoice .choice2 {
+  right: 0!important;
+}
+
+#firstchoice input:checked ~ .labelhold {
+  display: none;
+  
+}
+
+#secondchoice input:nth-child(1):checked ~ .outerchoice .choice1 {
+  left: 0!important;
+}
+
+#secondchoice input:nth-child(2):checked ~ .outerchoice .choice2 {
+  right: 0!important;
+}
+
+#secondchoice input:checked ~ .labelhold {
+  display: none;
+  
+} */
+
+
+
+
+
+ #nav {
+  position: fixed;
+  width:100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  margin: 0;
+  padding: 15px;
+  list-style: none;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+#nav a {
+  float: left;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+#nav a:hover {
+  color: #ff0;
+}
+
+.section {
+  height: 1000px;
+  padding: 30px 140px;
+}
+
+#warning-section{
+  padding-bottom:20%;
+}
+
+#bang-section-1{
+  padding-bottom:5%;
+}
+
+#choice2-section{
+  padding-bottom:0;
+}
+
+/* #section-2 {
+  /* background: blueviolet; */
+/* } */ */
+
+#section-3 {
+  background:red;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+}
+
+.section a {
+  color: #3399FF;
+} 
